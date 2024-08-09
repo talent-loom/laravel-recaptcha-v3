@@ -1,0 +1,50 @@
+{
+    "name": "shazeedul/recaptcha-v3",
+    "description": "PHP package for reCAPTCHA v3 in Laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Shazeedul\\RecaptchaV3\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Shazeedul\\RecaptchaV3\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Syed Shazeedul Islam",
+            "email": "syedshazeedul@gmail.com",
+            "role": "Developer",
+            "homepage": "https://github.com/shazeedul"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^11.0 || ^10.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.35",
+        "orchestra/testbench": "^8.0",
+        "laravel/pint": "^1.17"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shazeedul\\RecaptchaV3\\Providers\\RecaptchaV3ServiceProvider"
+            ],
+            "aliases": {
+                "RecaptchaV3": "Shazeedul\\RecaptchaV3\\Facades\\RecaptchaV3"
+            }
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
