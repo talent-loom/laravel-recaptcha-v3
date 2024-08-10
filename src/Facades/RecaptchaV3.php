@@ -1,6 +1,6 @@
 <?php
 
-namespace Shazeedul\RecaptchaV3\Facades;
+namespace TalantLoom\RecaptchaV3\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

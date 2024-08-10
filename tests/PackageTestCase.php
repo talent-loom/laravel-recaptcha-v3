@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Shazeedul\RecaptchaV3\Test;
+namespace TalantLoom\RecaptchaV3\Test;
 
-use Shazeedul\ReCaptchaV3\Providers\RecaptchaV3ServiceProvider;
+use TalantLoom\ReCaptchaV3\Providers\RecaptchaV3ServiceProvider;
 use Tests\TestCase;
 
 class PackageTestCase extends TestCase

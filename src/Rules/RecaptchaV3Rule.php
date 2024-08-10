@@ -1,9 +1,9 @@
 <?php
 
-namespace Shazeedul\RecaptchaV3\Rules;
+namespace TalantLoom\RecaptchaV3\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
-use Shazeedul\RecaptchaV3\Facades\RecaptchaV3;
+use TalantLoom\RecaptchaV3\Facades\RecaptchaV3;
 
 class RecaptchaV3Rule implements Rule
 {
