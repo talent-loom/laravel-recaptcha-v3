@@ -2,7 +2,7 @@
 
 namespace Shazeedul\RecaptchaV3\Rules;
 
-use Illuminate\Validation\Rule;
+use Illuminate\Contracts\Validation\Rule;
 use Shazeedul\RecaptchaV3\Facades\RecaptchaV3;
 
 class RecaptchaV3Rule implements Rule
