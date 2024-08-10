@@ -10,4 +10,14 @@ class RecaptchaV3 extends Facade
     {
         return 'recaptchaV3';
     }
+
+    public static function js()
+    {
+        return app('recaptchaV3')->js();
+    }
+
+    public static function execute($action, $formId)
+    {
+        return app('recaptchaV3')->execute($action, $formId);
+    }
 }
