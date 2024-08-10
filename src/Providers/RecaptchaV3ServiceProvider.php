@@ -3,7 +3,7 @@
 namespace Shazeedul\RecaptchaV3\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Shazeedul\ReCaptchaV3\ReCaptchaV3;
+use Shazeedul\RecaptchaV3\RecaptchaV3;
 
 class RecaptchaV3ServiceProvider extends ServiceProvider
 {
