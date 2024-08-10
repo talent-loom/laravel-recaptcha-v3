@@ -21,7 +21,7 @@
             "homepage": "https://github.com/talant-loom"
         }
     ],
-    "minimum-stability": "beta",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
         "php": "^8.1",
