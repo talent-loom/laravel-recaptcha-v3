@@ -1,5 +1,5 @@
 {
-    "name": "shazeedul/recaptcha-v3",
+    "name": "shazeedul/laravel-recaptcha-v3",
     "description": "PHP package for reCAPTCHA v3 in Laravel",
     "type": "library",
     "license": "MIT",
