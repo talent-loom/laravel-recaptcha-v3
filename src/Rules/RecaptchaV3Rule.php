@@ -1,6 +1,6 @@
 <?php
 
-namespace Shazeedul\RecaptchaV3\Src\Rules;
+namespace Shazeedul\RecaptchaV3\Rules;
 
 use Illuminate\Validation\Rule;
 use Shazeedul\RecaptchaV3\Facades\RecaptchaV3;
