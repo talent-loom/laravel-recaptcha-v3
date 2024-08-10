@@ -1,16 +1,16 @@
 {
-    "name": "talant-loom/laravel-recaptcha-v3",
+    "name": "talent-loom/laravel-recaptcha-v3",
     "description": "PHP package for reCAPTCHA v3 in Laravel",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "TalantLoom\\RecaptchaV3\\": "src/"
+            "TalentLoom\\RecaptchaV3\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "TalantLoom\\RecaptchaV3\\Tests\\": "tests/"
+            "TalentLoom\\RecaptchaV3\\Tests\\": "tests/"
         }
     },
     "authors": [
@@ -35,10 +35,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "TalantLoom\\RecaptchaV3\\Providers\\RecaptchaV3ServiceProvider"
+                "TalentLoom\\RecaptchaV3\\Providers\\RecaptchaV3ServiceProvider"
             ],
             "aliases": {
-                "RecaptchaV3": "TalantLoom\\RecaptchaV3\\Facades\\RecaptchaV3"
+                "RecaptchaV3": "TalentLoom\\RecaptchaV3\\Facades\\RecaptchaV3"
             }
         }
     },

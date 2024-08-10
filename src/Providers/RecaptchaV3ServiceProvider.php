@@ -1,9 +1,9 @@
 <?php
 
-namespace TalantLoom\RecaptchaV3\Providers;
+namespace TalentLoom\RecaptchaV3\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use TalantLoom\RecaptchaV3\RecaptchaV3;
+use TalentLoom\RecaptchaV3\RecaptchaV3;
 
 class RecaptchaV3ServiceProvider extends ServiceProvider
 {

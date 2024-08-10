@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace TalantLoom\RecaptchaV3\Test;
+namespace TalentLoom\RecaptchaV3\Test;
 
-use TalantLoom\ReCaptchaV3\Providers\RecaptchaV3ServiceProvider;
+use TalentLoom\ReCaptchaV3\Providers\RecaptchaV3ServiceProvider;
 use Tests\TestCase;
 
 class PackageTestCase extends TestCase

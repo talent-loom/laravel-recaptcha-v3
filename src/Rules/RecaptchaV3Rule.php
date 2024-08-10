@@ -1,9 +1,9 @@
 <?php
 
-namespace TalantLoom\RecaptchaV3\Rules;
+namespace TalentLoom\RecaptchaV3\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
-use TalantLoom\RecaptchaV3\Facades\RecaptchaV3;
+use TalentLoom\RecaptchaV3\Facades\RecaptchaV3;
 
 class RecaptchaV3Rule implements Rule
 {
