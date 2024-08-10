@@ -33,7 +33,7 @@ class RecaptchaV3
             return '';
         }
         return <<<HTML
-            <script src="https://www.google.com/recaptcha/api.js?render=' . $this->siteKey . '"></script>
+            <script src="https://www.google.com/recaptcha/api.js?render={$this->siteKey}"></script>
         HTML;
     }
 
@@ -47,7 +47,7 @@ class RecaptchaV3
                 document.getElementById('$formId').addEventListener('submit', function(event) {
                     event.preventDefault();
                     grecaptcha.ready(function() {
-                        grecaptcha.execute(' . $this->siteKey . ', {action: '$action'}).then(function(token) {
+                        grecaptcha.execute('{$this->siteKey}', {action: '$action'}).then(function(token) {
                             var recaptchaResponse = document.createElement('input');
                             recaptchaResponse.type = 'hidden';
                             recaptchaResponse.name = 'recaptcha_v3';
