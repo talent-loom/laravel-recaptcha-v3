@@ -1,6 +1,6 @@
 <?php
 
-namespace TalentLoom\RecaptchaV3\Facades;
+namespace TalentLoom\LaravelRecaptchaV3\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -5,12 +5,12 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "TalentLoom\\RecaptchaV3\\": "src/"
+            "TalentLoom\\LaravelRecaptchaV3\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "TalentLoom\\RecaptchaV3\\Tests\\": "tests/"
+            "TalentLoom\\LaravelRecaptchaV3\\Tests\\": "tests/"
         }
     },
     "authors": [
@@ -35,10 +35,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "TalentLoom\\RecaptchaV3\\Providers\\RecaptchaV3ServiceProvider"
+                "TalentLoom\\LaravelRecaptchaV3\\Providers\\RecaptchaV3ServiceProvider"
             ],
             "aliases": {
-                "RecaptchaV3": "TalentLoom\\RecaptchaV3\\Facades\\RecaptchaV3"
+                "RecaptchaV3": "TalentLoom\\LaravelRecaptchaV3\\Facades\\RecaptchaV3"
             }
         }
     },

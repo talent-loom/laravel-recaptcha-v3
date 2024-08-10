@@ -1,9 +1,10 @@
 <?php
 
-namespace TalentLoom\RecaptchaV3\Providers;
+namespace TalentLoom\LaravelRecaptchaV3\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use TalentLoom\RecaptchaV3\RecaptchaV3;
+use TalentLoom\LaravelRecaptchaV3\RecaptchaV3;
+
 
 class RecaptchaV3ServiceProvider extends ServiceProvider
 {
