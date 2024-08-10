@@ -1,16 +1,16 @@
 {
-    "name": "shazeedul/laravel-recaptcha-v3",
+    "name": "talant-loom/laravel-recaptcha-v3",
     "description": "PHP package for reCAPTCHA v3 in Laravel",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Shazeedul\\RecaptchaV3\\": "src/"
+            "TalantLoom\\RecaptchaV3\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Shazeedul\\RecaptchaV3\\Tests\\": "tests/"
+            "TalantLoom\\RecaptchaV3\\Tests\\": "tests/"
         }
     },
     "authors": [
@@ -18,7 +18,7 @@
             "name": "Syed Shazeedul Islam",
             "email": "syedshazeedul@gmail.com",
             "role": "Developer",
-            "homepage": "https://github.com/shazeedul"
+            "homepage": "https://github.com/talant-loom"
         }
     ],
     "minimum-stability": "dev",
@@ -35,10 +35,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Shazeedul\\RecaptchaV3\\Providers\\RecaptchaV3ServiceProvider"
+                "TalantLoom\\RecaptchaV3\\Providers\\RecaptchaV3ServiceProvider"
             ],
             "aliases": {
-                "RecaptchaV3": "Shazeedul\\RecaptchaV3\\Facades\\RecaptchaV3"
+                "RecaptchaV3": "TalantLoom\\RecaptchaV3\\Facades\\RecaptchaV3"
             }
         }
     },
