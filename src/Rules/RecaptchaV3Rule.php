@@ -3,13 +3,13 @@
 namespace Shazeedul\ReCaptchaV3\Src\Rules;
 
 use Illuminate\Validation\Rule;
-use Shazeedul\ReCaptchaV3\Facades\ReCaptchaV3;
+use Shazeedul\RecaptchaV3\Facades\RecaptchaV3;
 
-class ReCaptchaV3Rule implements Rule
+class RecaptchaV3Rule implements Rule
 {
     public function passes($attribute, $value)
     {
-        $response = ReCaptchaV3::validate($value);
+        $response = RecaptchaV3::validate($value);
         return $response['success'] && $response['score'] >= 0.5; // Customize score threshold as needed
     }
 
