@@ -4,11 +4,6 @@ use Illuminate\Support\Facades\Facade;
 use TalentLoom\LaravelRecaptchaV3\Facades\RecaptchaV3;
 use TalentLoom\LaravelRecaptchaV3\Rules\RecaptchaV3Rule;
 
-beforeEach(function () {
-    // Clear any resolved instances of facades
-    Facade::clearResolvedInstance('recaptchaV3');
-});
-
 it('initializes rule instanceOf', function () {
     $rule = new RecaptchaV3Rule();
 
@@ -17,7 +12,7 @@ it('initializes rule instanceOf', function () {
 
 it('validates recaptcha token successfully', function () {
     // Mock the RecaptchaV3 facade
-    // Facade::clearResolvedInstance('recaptchaV3');
+    Facade::clearResolvedInstance('recaptchaV3');
     RecaptchaV3::shouldReceive('validate')
         ->once()
         ->with('valid-token')
@@ -36,7 +31,7 @@ it('validates recaptcha token successfully', function () {
 
 it('fails recaptcha validation due to low score', function () {
     // Mock the RecaptchaV3 facade
-    // Facade::clearResolvedInstance('recaptchaV3');
+    Facade::clearResolvedInstance('recaptchaV3');
     RecaptchaV3::shouldReceive('validate')
         ->once()
         ->with('low-score-token')
@@ -55,7 +50,7 @@ it('fails recaptcha validation due to low score', function () {
 
 it('fails recaptcha validation due to verification failure', function () {
     // Mock the RecaptchaV3 facade
-    // Facade::clearResolvedInstance('recaptchaV3');
+    Facade::clearResolvedInstance('recaptchaV3');
     RecaptchaV3::shouldReceive('validate')
         ->once()
         ->with('invalid-token')
