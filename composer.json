@@ -28,8 +28,8 @@
         "illuminate/support": "^9.0"
     },
     "require-dev": {
-        "pestphp/pest": "^2.35",
-        "orchestra/testbench": "^8.0",
+        "pestphp/pest": "^1.23",
+        "orchestra/testbench": "^7.43",
         "laravel/pint": "^1.17"
     },
     "extra": {
