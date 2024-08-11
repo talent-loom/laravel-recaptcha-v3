@@ -1,33 +1,22 @@
 <?php
 
-namespace TalentLoom\LaravelRecaptchaV3\Tests\Providers;
-
 use Orchestra\Testbench\TestCase;
 use TalentLoom\LaravelRecaptchaV3\RecaptchaV3;
 use TalentLoom\LaravelRecaptchaV3\Providers\RecaptchaV3ServiceProvider;
 
-class RecaptchaV3ServiceProviderTest extends TestCase
-{
-    /**
-     * Register the service provider for the test.
-     *
-     * @param \Illuminate\Foundation\Application $app
-     * @return array
-     */
-    protected function getPackageProviders($app)
-    {
-        return [
-            RecaptchaV3ServiceProvider::class,
-        ];
-    }
+// Use the TestCase class provided by Orchestra Testbench
+uses(TestCase::class)
+    // Register the service provider for the test
+    ->beforeEach(function () {
+        $this->app->register(RecaptchaV3ServiceProvider::class);
+    })
+    ->in(__DIR__);
 
-    /** @test */
-    public function it_registers_the_recaptcha_v3_binding_in_the_service_container()
-    {
-        // Resolve the RecaptchaV3 class from the service container
-        $recaptcha = $this->app->make('recaptchaV3');
+// Define the test case
+test('it registers the recaptcha v3 binding in the service container', function () {
+    // Resolve the RecaptchaV3 class from the service container
+    $recaptcha = app('recaptchaV3');
 
-        // Assert that the instance is of the correct type
-        $this->assertInstanceOf(RecaptchaV3::class, $recaptcha);
-    }
-}
+    // Assert that the instance is of the correct type
+    expect($recaptcha)->toBeInstanceOf(RecaptchaV3::class);
+});
